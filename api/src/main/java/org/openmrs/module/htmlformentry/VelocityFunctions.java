@@ -260,4 +260,13 @@ public class VelocityFunctions {
         return day.toDate();
     }
 
+    /**
+     * Fetches a global property value by property name
+     * @param name the property name
+     * @return the global property value
+     */
+    public String getGlobalProperty(String name) {
+        return Context.getAdministrationService().getGlobalProperty(name);
+    }
+
 }
